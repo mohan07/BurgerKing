@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+img,video{
+    width: 100%;
+}
+body{
+    background: linear-gradient(#d8ae4c,black);
+    color: white;
+}
+nav{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #d8ae4c;
+    z-index: 2;
+}
+nav h1{
+    font-family: monospace;
+    letter-spacing: 0.3rem;
+    font-size: 1.8rem;
+}
+a{
+    font-family: monospace;
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: 1.5s ease;
+}
+a:hover{
+    color: #131313;
+}
+#hero{
+    height: 100vh;
+    position: relative;
+}
+
+#hero h1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-family: monospace;
+    letter-spacing: 1.2rem;
+    font-size: 3rem;
+    font-weight: 600;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#About{
+    height: 100vh;
+    display: flex;
+    margin: 3rem 0;
+}
+#About .left{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+#About .left img{
+    border-radius: 0.8rem;
+    box-shadow: 0.8rem 0.8rem 0.8rem #131313;
+}
+#About .right{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    font-size: 1.3rem;
+    width: 70%;
+}
+h3,.card-title{
+    font-family: monospace;
+    letter-spacing: 0.3rem;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+#service{
+    height: 100vh;
+    margin: 4rem 0;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    width: 20rem;
+    background-color: rgba(0, 0, 0, 0.397);
+    color: white;
+    border-radius: 0.8rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+
+}
+#contact{
+    height: 100vh;
+    margin: 4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+form{
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.199);
+    color: black;
+    padding: 1rem;
+    border-radius: 0.8rem;
+}
+input,textarea{
+    margin: 1rem 0;
+    padding: 0.5rem 2rem;
+    font-size: 1.3rem;
+}
+.btn{
+    background-color: transparent;
+    font-size: 1.3rem;
+    color: white;
+    outline: none;
+    transition: 1.8s;
+}
+.btn:hover{
+    background-color: #d8ae4c;
+}
+
+@media screen and (max-width:425px){
+ nav a{
+    display: none;
+ }
+ nav h1{
+    font-size: 1.4rem;
+ }
+ #hero h1{
+    display: none;
+ }
+ #hero{
+    height: 30vh;
+    margin: 2rem 0;
+ }
+ #About{
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+ }
+ #service{
+    flex-direction: column;
+    height: 100%;
+ }
+ .row{
+    flex-direction: column;
+    align-items: center;
+ }
+ .col{
+    width: 100%;
+ }
+ .card{
+    width: 100%;
+    margin: 1rem 0;
+ }
+ #About .left{
+    width: 100%;
+ }
+}
